@@ -29,3 +29,4 @@ class Screen():
         self.total_bgd.blit(self.background,(0,0))
         # Blit total background onto surface initially
         self.surface.blit(self.total_bgd, (0,0))
+        self.rect = self.surface.get_rect()
