@@ -15,10 +15,10 @@ def main():
     render_gerald = pygame.sprite.RenderUpdates()
     render_gerald.add(gerald)
     render_gerald.draw(screen.surface)
-    
     # Draw everything on the screen
     pygame.display.update()
     
+    i = 1
     # main game loop run while running
     while running:
         # Check if Escape is pressed to end game
@@ -26,6 +26,6 @@ def main():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     running = False
-                    pygame.quit()                  
+                    pygame.quit()
 
 if __name__ == '__main__': main()
