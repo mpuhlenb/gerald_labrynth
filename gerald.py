@@ -12,7 +12,7 @@ class Gerald(pygame.sprite.Sprite):
         
         stand_sprite_list = self.__create_gerald_sprite_list(standing_imgs)
         # Starting Gerald sprite
-        self.image = self.stand_sprite_list[0]
+        self.image = stand_sprite_list[0]
         self.rect = self.image.get_rect()
         self.width = self.rect[2]
         self.height = self.rect[3]
@@ -26,6 +26,6 @@ class Gerald(pygame.sprite.Sprite):
             rect = image.get_rect()
             img_background = pygame.Surface((rect[2], rect[3]))
             img_background.fill(img_background_color)
-            image.blit(img_background, (0,0), special_flags=pygame.BLEND_RGB_MULT)
+            image.blit(img_background, (0,0), special_flags=pygame.BLEND_ADD)
             sprite_list.append(image)
         return sprite_list
