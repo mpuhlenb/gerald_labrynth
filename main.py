@@ -1,6 +1,7 @@
 # Gerald's Labrynth project for Simon learning pygame
 import pygame
 from screen import Screen
+from gerald import Gerald
 
 def main():
     running = True
@@ -8,6 +9,12 @@ def main():
     # Start screen
     screen = Screen()
     
+    # Create Gerald
+    gerald = Gerald()
+    
+    render_gerald = pygame.sprite.RenderUpdates()
+    render_gerald.add(gerald)
+    render_gerald.draw(screen.surface)
     # Draw everything on the screen
     pygame.display.update()
     
@@ -18,6 +25,6 @@ def main():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     running = False
-                    pygame.quit()                  
+                    pygame.quit()
 
 if __name__ == '__main__': main()
