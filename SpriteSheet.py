@@ -2,6 +2,9 @@ import json
 import collections
 import pygame as pg
 
+""" Spritesheet class creates a sorted by name image list
+    from a spritesheet and data atlas json file provided
+"""
 class SpriteSheet:
     # load an atlas image
     # can also pass an associated XML file (ref. Kenney art)

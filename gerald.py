@@ -3,6 +3,7 @@ import collections
 import os
 from SpriteSheet import SpriteSheet
 
+""" Creates gerald sprites and rect attributes from spritesheets"""
 class Gerald(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
