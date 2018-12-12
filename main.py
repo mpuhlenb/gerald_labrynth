@@ -17,7 +17,6 @@ def main():
     render_gerald.draw(screen.surface)
     # Draw everything on the screen
     pygame.display.update()
-    i = 1
     
     # main game loop run while running
     while running:
